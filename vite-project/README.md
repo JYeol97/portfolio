@@ -55,3 +55,17 @@ src/
 │   └── utils.ts            # cn 함수 등 공용 유틸
 ├── App.tsx                 # 진입점
 ├── main.tsx
+```
+
+### ✅ 현재 우리 프로젝트 구조
+
+| 항목 | 내용 |
+|------|------|
+| 프로젝트 | 초기화	pnpm create vite → React + TypeScript 선택 |
+| 번들러 |	Vite 사용 (super fast dev server) | 
+| UI 프레임워크 |	shadcn/ui 기반의 Tailwind CSS + Radix UI |
+| 상태 관리 |	useState 사용 중 (추후 필요 시 Recoil, Zustand 등 가능) |
+| 타입 시스템 |	TypeScript (.tsx) |
+| 스타일링 |	Tailwind CSS + Custom Theme (CSS 변수 기반) |
+| 컴포넌트 분리 |	components/ui/Button.tsx 등 |
+| 설정 파일 |	vite.config.ts, tsconfig.json, tailwind.config.ts 등 커스터마이징 완료 |

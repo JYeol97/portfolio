@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+## 📦 기술 스택 및 사용 이유
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### ✅ 주요 프레임워크 및 툴
 
-Currently, two official plugins are available:
+| 항목 | 버전 | 사용 이유 |
+|------|------|-----------|
+| **React** | Latest | 컴포넌트 기반 UI 라이브러리로, 빠르고 유연한 프론트엔드 구현이 가능 |
+| **TypeScript** | 5.x | 정적 타입 검사를 통해 개발 안정성 향상 및 자동완성 지원 강화 |
+| **Vite** | 5.x | 빠른 번들링과 핫 리로드(HMR)를 제공하는 차세대 빌드 도구 |
+| **pnpm** | 8.x | 의존성 중복을 방지하고 디스크 공간을 절약하는 고성능 패키지 매니저 |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### 🎨 UI 라이브러리 및 스타일링
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| 패키지 | 설명 및 사용 이유 |
+|--------|-------------------|
+| **tailwindcss** | 유틸리티 기반 CSS 프레임워크로, 빠르게 반응형 UI를 구현 가능 |
+| **tailwindcss-animate** | Tailwind에서 간단한 애니메이션 효과를 쉽게 적용하기 위해 사용 |
+| **shadcn/ui** | Headless 컴포넌트 기반의 UI 라이브러리로, 커스터마이징이 쉬우며 Radix UI 위에 구성됨 |
+| **@radix-ui/react-slot** | `shadcn/ui` 내부에서 slot 패턴을 구현할 때 사용됨 |
+| **class-variance-authority (cva)** | Tailwind 클래스들을 조건에 따라 조합할 수 있게 해주는 도구 |
+| **clsx** *(선택)* | 조건부로 클래스명을 쉽게 연결하는 유틸리티 (필요 시 사용) |
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🛠️ 개발 지원 도구
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| 패키지 | 설명 및 사용 이유 |
+|--------|-------------------|
+| **@vitejs/plugin-react** | React + Vite 환경에서 Fast Refresh를 적용하기 위한 플러그인 |
+| **@types/node** | `path`, `__dirname` 등 Node.js 타입 지원을 위한 타입 정의 파일 |
+| **eslint** | 코드 품질 유지 및 일관성 있는 스타일 유지 |
+| **prettier** | 코드 포맷팅 도구로, 협업 시 일관된 코드 스타일 유지 |
+| **typescript** | Type 안전성을 확보하고, 더 나은 IDE 지원을 위해 사용 |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 📁 경로 Alias 설정
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| 설정 | 이유 |
+|------|------|
+| `@ → src/` | 긴 상대 경로(`../../../`) 대신 `@/components/…`처럼 직관적인 경로로 import 가능하게 하기 위해 [`tsconfig.json`]과 [`vite.config.ts`]에 alias 설정 적용 |
+
+---
+
+### 📂 폴더 구조 예시
+
+```bash
+src/
+├── components/
+│   └── ui/
+│       └── button.tsx      # shadcn 기반 버튼 컴포넌트
+├── lib/
+│   └── utils.ts            # cn 함수 등 공용 유틸
+├── App.tsx                 # 진입점
+├── main.tsx

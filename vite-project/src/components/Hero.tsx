@@ -18,7 +18,7 @@ const Hero = () => {
 
       {/* 왼쪽에 사진 (xl 이상에서만 표시) */}
       <div className="absolute left-60 top-1/2 -translate-y-1/2 hidden xl:block">
-        <div className="w-[300px] h-[300px] rounded-lg overflow-hidden shadow-lg border-4 border-white/30">
+        <div className="w-[300px] h-[380px] rounded-lg overflow-hidden shadow-lg border-4 border-white/30">
           <img src={profileImg} alt="임재열 프로필" className="w-full h-full object-cover" />
         </div>
       </div>

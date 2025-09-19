@@ -7,10 +7,11 @@ import tobecontinued from "../assets/tobecontinued.gif";
 export type Project = {
   title: string;
   period: string;
-  desc: string; // 카드용 짧은 설명
+  desc: string;
   cover: string;
   tech: string[];
   categories: string[];
+  github?: string; // ✅ 프로젝트 깃허브 링크
   details?: {
     summary?: string;
     background?: string;
@@ -52,6 +53,7 @@ export const projects: Project[] = [
       "GitHub Actions",
     ],
     categories: ["frontend", "backend", "ai", "infra"],
+    github: "https://github.com/Flower-Boys/LocalPiece",
     details: {
       summary:
         "사용자가 선택한 장소를 시작으로 AI가 다음 여행 퍼즐 조각(관광지, 식사, 카페, 소소한 장소)을 추천하여 하루 여행 코스를 완성하는 서비스. 자동 블로그 생성 기능을 결합해 여행 기록까지 지원.",
@@ -110,6 +112,7 @@ export const projects: Project[] = [
       "CloudFront",
     ],
     categories: ["ai"],
+    github: "https://github.com/S207-tobe-continued/tobe-continued",
     details: {
       summary:
         "사용자의 정면·좌측·우측 얼굴 이미지를 AI 파이프라인으로 분석해 최종 얼굴형을 판별하고, 맞춤형 헤어스타일 이미지를 추천하는 서비스. FFHQ 정렬, Mediapipe 랜드마크 분석, BiSeNet 세그멘테이션을 결합한 파이프라인과 비동기 처리 기반 인프라를 구축.",
@@ -153,6 +156,7 @@ export const projects: Project[] = [
     cover: dingding,
     tech: ["React", "TypeScript", "React Query", "Spring Boot", "FastAPI", "WebSocket", "MySQL", "S3", "Jenkins", "Docker", "YOLOv11", "RandomForest", "SVM"],
     categories: ["frontend", "devops"],
+    github: "https://github.com/dingding-etc/dingding",
     details: {
       summary: "기타 연주자의 자세와 리듬을 실시간으로 분석하여 학습을 돕는 플랫폼. YOLOv11 기반 자세 인식, ML 모델 기반 리듬 평가, WebSocket 기반 실시간 분석/피드백 기능을 구현.",
       background: "음악 학습 플랫폼이라는 아이디어에서 출발하여, 단순한 악보 제공이 아닌 실제 연주 데이터를 실시간 분석하고 사용자에게 피드백을 제공하는 것을 목표로 했습니다.",
@@ -193,6 +197,7 @@ export const projects: Project[] = [
     cover: grimtalk,
     tech: ["React", "WebRTC", "Socket.io", "FastAPI", "ResNet50", "Tailwind CSS"],
     categories: ["frontend"],
+    github: "https://github.com/color-chill-guys",
     details: {
       summary:
         "강사와 수강생이 실시간으로 소통하며 그림을 배우고 가르칠 수 있는 온라인 미술 교육 플랫폼. WebRTC 기반 화상 수업과 실시간 채팅, 캔버스 공유 기능을 제공하며 AI 그림 분석을 통한 맞춤 피드백을 지원.",
@@ -227,6 +232,7 @@ export const projects: Project[] = [
     cover: moneyindustry,
     tech: ["Vue.js", "Django", "Random Forest", "금융 API", "카카오맵 API"],
     categories: ["frontend", "backend"],
+    github: "https://github.com/Chungmingyu/Financial-Project",
     details: {
       summary: "사용자 투자 성향을 분석하여 맞춤형 금융 상품을 추천하는 서비스. 실시간 금융 데이터를 제공하고, 커뮤니티 기능까지 통합한 종합 금융 플랫폼.",
       background: "금융 데이터를 실시간으로 반영하고 사용자 성향을 기반으로 한 추천 모델을 구축하는 과정에서 데이터 처리와 추천 정확도를 높이는 데 집중했습니다.",

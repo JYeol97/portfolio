@@ -52,7 +52,14 @@ const Hero = () => {
         </p>
 
         {/* CTA 버튼 */}
-        <a href="#about" className="inline-block bg-orange-500 backdrop-blur-md text-white font-semibold px-6 py-4 rounded-full hover:bg-orange-600 transition">
+        <a
+          href="#about"
+          onClick={(e) => {
+            e.preventDefault();
+            document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="inline-block bg-orange-500 backdrop-blur-md text-white font-semibold px-6 py-4 rounded-full hover:bg-orange-600 transition"
+        >
           더 알아보기 ↓
         </a>
       </div>

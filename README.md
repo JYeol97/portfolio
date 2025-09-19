@@ -15,13 +15,15 @@
 
 ### 🎨 UI & 스타일링
 
-| 도구 / 라이브러리             | 설명 |
-|------------------------------|------|
-| **React**                    | 사용자 인터페이스 구축을 위한 UI 라이브러리 |
-| **Tailwind CSS**             | 유틸리티 기반 CSS 프레임워크로, 빠르고 일관된 스타일링 가능 |
-| **shadcn/ui**                | Tailwind 기반의 접근성 높은 UI 컴포넌트 모음 |
-| **class-variance-authority** | 컴포넌트 스타일을 variant 기반으로 동적 제어하기 위해 사용 |
-| **tailwindcss-animate**      | Tailwind에서 애니메이션 유틸리티를 확장하기 위한 플러그인 |
+| 도구 / 라이브러리                | 설명 |
+|------------------------------   |------|
+| **React**                       | 사용자 인터페이스 구축을 위한 UI 라이브러리 |
+| **Tailwind CSS**                | 유틸리티 기반 CSS 프레임워크로, 빠르고 일관된 스타일링 가능 |
+| **shadcn/ui**                   | Tailwind 기반의 접근성 높은 UI 컴포넌트 모음 |
+| **class-variance-authority**    | 컴포넌트 스타일을 variant 기반으로 동적 제어하기 위해 사용 |
+| **tailwindcss-animate**         | Tailwind에서 애니메이션 유틸리티를 확장하기 위한 플러그인 |
+| **Framer Motion**               | 리액트용 애니메이션 라이브러리. 스크롤 기반 섹션 전환, 페이드 인/아웃 등 구현 가능 |
+| **react-intersection-observer** | 컴포넌트가 화면에 들어왔는지 감지하는 Hook 제공 (Framer Motion과 잘 결합됨) |
 
 ---
 

@@ -46,8 +46,9 @@ const Hero = () => {
 
         {/* 태그라인 */}
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed drop-shadow mb-8 mt-10">
-          수학교육과 전공, 학교 현장 경험, 그리고 SSAFY 과정을 통해 <span className="text-red-300">문제 해결력·끈기·협업 역량</span>을 고루 다져왔습니다. 앞으로도 배우고 성장하며 팀에 기여하는
-          개발자가 되고자 합니다.
+          수학교육과 전공, 학교 현장 경험, 그리고 SSAFY 과정을 통해 <br />
+          <span className="text-red-300">문제 해결력·끈기·협업 역량</span>을 고루 다져왔습니다.
+          <br /> 앞으로도 배우고 성장하며 팀에 기여하는 개발자가 되고자 합니다.
         </p>
 
         {/* CTA 버튼 */}

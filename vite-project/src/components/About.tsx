@@ -59,9 +59,7 @@ const About = () => {
           <GraduationCap className="w-10 h-10 text-gray-600" />
           <div className="flex flex-col gap-1">
             <p className="font-bold font-gothicA1">학력</p>
-            <p className="text-sm text-gray-500">
-              가톨릭관동대학교 <p>- 수학교육과</p>
-            </p>
+            <p className="text-sm text-gray-500">가톨릭관동대학교 (수학교육과)</p>
           </div>
         </div>
       </div>

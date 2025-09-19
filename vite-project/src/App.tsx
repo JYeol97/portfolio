@@ -20,8 +20,8 @@ function App() {
       {/* ✅ 나머지 섹션 */}
       <About />
       <Skills />
-      <Archiving />
       <Projects />
+      <Archiving />
       <Career />
       <ScrollToTopButton />
       {/* <Contact /> */}

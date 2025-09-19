@@ -17,7 +17,7 @@ const Projects = () => {
       <hr className="w-24 h-1 mx-auto bg-gray-300 rounded border-0 mb-12" />
 
       {/* 필터 버튼 */}
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
+      <div className="flex flex-wrap justify-center gap-3 mb-6">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -29,6 +29,8 @@ const Projects = () => {
           </button>
         ))}
       </div>
+      {/* 안내 문구 */}
+      <p className="text-gray-500 text-sm mb-6">프로젝트 카드를 클릭하면 상세 내용을 확인할 수 있습니다.</p>
 
       {/* 프로젝트 카드 */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-4">

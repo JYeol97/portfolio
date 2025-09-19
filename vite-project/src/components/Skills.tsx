@@ -61,7 +61,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-200 from-gray-50 to-white">
+    <section id="skills" className="py-20 bg-gray-300 from-gray-50 to-white">
       {/* 타이틀 */}
       <h2 className="text-5xl font-blackHan text-center mb-3 text-black tracking-wide">Skills</h2>
       <hr className="w-24 h-1 mx-auto bg-gray-400 rounded border-0 mb-12" />

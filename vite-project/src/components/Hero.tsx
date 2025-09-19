@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="relative min-h-[260px] flex items-center justify-center">
           <div className="invisible text-4xl md:text-5xl font-semibold leading-relaxed">
             안녕하세요. <br />
-            <span className="text-indigo-400">새로운 도전을 즐기며 성장하는</span> <br />
+            <span className="text-indigo-400">새로운 도전을 즐기며 성장하는aa</span> <br />
             개발자 임재열입니다.
           </div>
           <p className="absolute text-4xl md:text-5xl text-gray-200 font-semibold drop-shadow whitespace-pre-line leading-snug">

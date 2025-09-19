@@ -24,7 +24,9 @@ const ProjectModal = ({ project, onClose }: Props) => {
       >
         {/* sticky header */}
         <div className="sticky top-0 flex justify-between items-center px-6 py-4 bg-black text-white rounded-t-2xl z-10">
-          <h3 className="text-2xl font-bold">{project.title}</h3>
+          <div className="flex flex-row items-center gap-2">
+            <h3 className="text-2xl font-bold">{project.title}</h3>
+          </div>
           <button onClick={onClose} className="text-white text-2xl hover:text-gray-200 transition">
             ✕
           </button>
@@ -33,6 +35,11 @@ const ProjectModal = ({ project, onClose }: Props) => {
         {/* 내용 */}
         <div className="px-6 py-6 text-left leading-relaxed text-gray-800 ">
           <img src={project.cover} alt={project.title} className="w-full h-64 object-cover rounded-lg mb-8 shadow" />
+          {/* Period + Member count */}
+          <h3 className="flex flex-row items-center text-xl font-semibold text-black mb-5">
+            📅 {project.period}
+            {project.details?.members && project.details.members.length > 0 && <span className="ml-2 text-black text-base font-normal">({project.details.members.length}명)</span>}
+          </h3>
 
           <p className="mb-8 md:text-lg font-gothicA1 text-lg">{project.desc}</p>
 

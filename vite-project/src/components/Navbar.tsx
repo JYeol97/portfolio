@@ -20,8 +20,8 @@ const Navbar = () => {
   const menus = [
     { name: "About", to: "about" },
     { name: "Skills", to: "skills" },
-    { name: "Archiving", to: "archiving" },
     { name: "Projects", to: "projects" },
+    { name: "Archiving", to: "archiving" },
     { name: "Career", to: "career" },
     // { name: "Contact", to: "contact" },
   ];

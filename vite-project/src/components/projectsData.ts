@@ -27,7 +27,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "퍼즐처럼 완성하는 AI 기반 여행 경로 추천 플랫폼 🧩",
-    period: "2025.07 ~ 2025. 11",
+    period: "2025.07 ~ 2025.11",
     desc: "관광데이터와 AI를 활용해 여행지를 퍼즐처럼 추천하고, 자동 블로그 생성 기능까지 제공하는 플랫폼.",
     cover: localpiece,
     tech: [

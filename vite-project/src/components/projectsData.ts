@@ -27,7 +27,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "퍼즐처럼 완성하는 AI 기반 여행 경로 추천 플랫폼 🧩",
-    period: "2025.07 ~ 진행 중",
+    period: "2025.07 ~ 2025. 11",
     desc: "관광데이터와 AI를 활용해 여행지를 퍼즐처럼 추천하고, 자동 블로그 생성 기능까지 제공하는 플랫폼.",
     cover: localpiece,
     tech: [
@@ -56,9 +56,9 @@ export const projects: Project[] = [
     github: "https://github.com/Flower-Boys/LocalPiece",
     details: {
       summary:
-        "사용자가 선택한 장소를 시작으로 AI가 다음 여행 퍼즐 조각(관광지, 식사, 카페, 소소한 장소)을 추천하여 하루 여행 코스를 완성하는 서비스. 자동 블로그 생성 기능을 결합해 여행 기록까지 지원.",
+        "사용자가 선택한 장소를 시작으로 AI가 다음 여행 퍼즐 조각(관광지, 식사, 카페, 소소한 장소 등)을 추천하여 하루 여행 코스를 완성하는 서비스. 자동 블로그 생성 기능을 결합해 여행 기록까지 지원.",
       background:
-        "관광데이터와 카카오 API를 적극 활용하여 실제 위치 기반 경로 추천이 가능하도록 설계했습니다. 기존 단순 여행 추천이 아닌, AI 기반 맞춤형 코스 완성과 기록까지 통합하는 것을 목표로 했습니다.",
+        "관광데이터와 구글, 카카오 API를 적극 활용하여 실제 위치 기반 경로 추천이 가능하도록 설계했습니다. 기존 단순 여행 추천이 아닌, AI 기반 맞춤형 코스 완성과 기록까지 통합하는 것을 목표로 했습니다.",
       meaning:
         "처음으로 대규모 AI 파이프라인과 프론트엔드 전체 UI/UX를 단독으로 책임지며, 디자인부터 배포까지 풀스택 역량을 체득한 프로젝트. 특히 AI·백엔드·프론트의 협업 흐름을 직접 연결한 경험이 중요했습니다.",
       features: [
@@ -66,9 +66,14 @@ export const projects: Project[] = [
         "여행 테마 기반 코스 생성: 등산, 먹방, 감성 등 테마 기반 추천",
         "코스 공유 및 커뮤니티: 좋아요, 후기 작성, 유저 저장 기능",
         "자동 블로그 생성: 이미지·장소 입력 → AI 기반 타임라인 블로그 콘텐츠(Markdown) 생성",
-        "여행 발자국 지도: 하루 여행 코스 시각화 및 기록 저장",
+        "여행 발자국 퍼즐: 하루 여행 코스 시각화 및 기록 저장",
       ],
-      outcome: ["프로젝트 진행 중", "AI 파이프라인 설계 및 프론트엔드 전담 구현 완료 단계"],
+      outcome: [
+        "경북 공공데이터와 구글, 카카오 API를 활용해 여행 코스 생성 → 저장 → 공유까지 이어지는 엔드투엔드 서비스 완성",
+        "YOLO + Places365 + BLIP-2를 연동한 이미지 분석·블로그 자동 생성 파이프라인 구축 및 실제 여행 시나리오로 기능 검증",
+        "React + Spring Boot + FastAPI 기반 다중 백엔드 구조를 하나의 도메인에서 통합 운용하며 성능/에러 처리/UX까지 안정화",
+        "팀 내에서 AI 활용성·완성도 측면에서 레퍼런스 수준의 프로젝트로 평가받으며, 이후 포트폴리오 핵심 사례로 활용",
+      ],
       techStack: [
         "Frontend: React, SCSS, React Query, Zustand, Vite",
         "Backend: Spring Boot, GraphQL, JWT",
@@ -78,9 +83,7 @@ export const projects: Project[] = [
       ],
       members: [
         { name: "본인", role: "AI 블로그 생성 파이프라인 / Frontend & 디자인 전담, 백엔드 일부" },
-        { name: "팀원 A", role: "Backend(Spring Boot)" },
-        { name: "팀원 B", role: "AI 여행지 추천 알고리즘 파이프라인" },
-        { name: "팀원 C", role: "데이터베이스 / 인프라" },
+        { name: "팀원 B", role: "AI 여행지 추천 알고리즘 파이프라인 Backend(Spring Boot), 인프라" },
       ],
     },
   },

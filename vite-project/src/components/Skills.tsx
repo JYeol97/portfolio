@@ -6,7 +6,7 @@ const Skills = () => {
       title: "프로그래밍 언어",
       icon: <Code2 className="w-6 h-6 text-yellow-500" />,
       items: [
-        { name: "JavaScript (ES6+)", level: 70 },
+        { name: "JavaScript (ES6+)", level: 75 },
         { name: "TypeScript", level: 70 },
         { name: "Python", level: 65 },
       ],
@@ -15,8 +15,8 @@ const Skills = () => {
       title: "프론트엔드",
       icon: <Monitor className="w-6 h-6 text-pink-500" />,
       items: [
-        { name: "React", level: 80 },
-        { name: "Vue.js", level: 55 },
+        { name: "React / Next.js", level: 80 },
+        { name: "Vue.js", level: 50 },
         { name: "Tailwind CSS / CSS3", level: 85 },
         { name: "Redux / Zustand / Recoil", level: 65 },
       ],
@@ -25,9 +25,9 @@ const Skills = () => {
       title: "백엔드 & 데이터베이스",
       icon: <Server className="w-6 h-6 text-green-500" />,
       items: [
-        { name: "FastAPI", level: 50 },
-        { name: "Django", level: 45 },
-        { name: "MySQL", level: 35 },
+        { name: "FastAPI", level: 60 },
+        { name: "Django", level: 55 },
+        { name: "MySQL", level: 45 },
         { name: "SQLite", level: 60 },
       ],
     },
@@ -35,9 +35,9 @@ const Skills = () => {
       title: "AI 엔지니어링",
       icon: <Brain className="w-6 h-6 text-indigo-500" />,
       items: [
-        { name: "Computer Vision (Mediapipe, OpenCV)", level: 40 },
-        { name: "Image Segmentation (BiSeNet)", level: 50 },
-        { name: "Face Alignment (FFHQ)", level: 45 },
+        { name: "Computer Vision (Mediapipe, OpenCV)", level: 30 },
+        { name: "Image Segmentation (BiSeNet)", level: 45 },
+        { name: "Face Alignment (FFHQ)", level: 40 },
         { name: "Model Fine-tuning (LoRA, Transfer Learning)", level: 25 },
       ],
     },
@@ -45,8 +45,8 @@ const Skills = () => {
       title: "DevOps",
       icon: <Cloud className="w-6 h-6 text-emerald-500" />,
       items: [
-        { name: "Docker / Jenkins / Nginx", level: 75 },
-        { name: "AWS S3 / CloudFront", level: 50 },
+        { name: "Docker / Jenkins / Nginx", level: 65 },
+        { name: "AWS S3 / CloudFront", level: 45 },
       ],
     },
     {

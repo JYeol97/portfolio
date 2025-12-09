@@ -82,8 +82,8 @@ export const projects: Project[] = [
         "Infra: Docker, Kubernetes, Nginx, GitHub Actions",
       ],
       members: [
-        { name: "본인", role: "AI 블로그 생성 파이프라인 / Frontend & 디자인 전담, 백엔드 일부" },
-        { name: "팀원 B", role: "AI 여행지 추천 알고리즘 파이프라인 Backend(Spring Boot), 인프라" },
+        { name: "본인", role: "AI 블로그 생성 파이프라인, Frontend & 디자인 전담, 백엔드 일부" },
+        { name: "팀원 B", role: "AI 여행지 추천 알고리즘 파이프라인, Backend(Spring Boot), 인프라" },
       ],
     },
   },

@@ -28,12 +28,12 @@ const Hero = () => {
         <div className="relative min-h-[260px] flex items-center justify-center">
           <div className="invisible text-4xl md:text-5xl font-semibold leading-relaxed">
             안녕하세요. <br />
-            <span className="text-indigo-400">새로운 도전을 즐기며 성장하는aa</span> <br />
+            <span className="text-indigo-400">변화에 맞춰 꾸준하게 성장하는aa</span> <br />
             개발자 임재열입니다.
           </div>
           <p className="absolute text-4xl md:text-5xl text-gray-200 font-semibold drop-shadow whitespace-pre-line leading-snug">
             <ReactTyped
-              strings={["안녕하세요.\n<span class='text-indigo-400'>새로운 도전을 즐기며 성장하는</span>\n개발자 <span>임재열</span>입니다."]}
+              strings={["안녕하세요.\n<span class='text-indigo-400'>변화에 맞춰 꾸준하게 성장하는</span>\n개발자 <span>임재열</span>입니다."]}
               typeSpeed={80}
               backSpeed={40}
               backDelay={5000}
@@ -48,7 +48,7 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed drop-shadow mb-8 mt-14">
           수학교육과 전공, 학교 현장 경험, 그리고 SSAFY 과정을 통해 <br />
           <span className="text-red-300">문제 해결력·끈기·협업 역량</span>을 고루 다져왔습니다.
-          <br /> 앞으로도 배우고 성장하며 팀에 기여하는 개발자가 되고자 합니다.
+          <br /> 앞으로도 학습하고 성장하며 팀에 기여하는 개발자가 되고자 합니다.
         </p>
 
         {/* CTA 버튼 */}

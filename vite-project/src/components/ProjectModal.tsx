@@ -51,11 +51,11 @@ const ProjectModal = ({ project, onClose }: Props) => {
                   GitHub
                 </a>
               )}
-              {project.title === "퍼즐처럼 완성하는 AI 기반 여행 경로 추천 플랫폼 🧩" && (
+              {/* {project.title === "퍼즐처럼 완성하는 AI 기반 여행 경로 추천 플랫폼 🧩" && (
                 <a href="https://localpiece.netlify.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-emerald-600 hover:underline">
                   🔗 Site Here!
                 </a>
-              )}
+              )} */}
             </div>
           </div>
 

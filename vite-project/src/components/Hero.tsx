@@ -1,5 +1,5 @@
 import backgroundImg from "../assets/background.jpg";
-import profileImg from "../assets/profile.jpg";
+// import profileImg from "../assets/profile.jpg";
 import { ReactTyped } from "react-typed";
 
 const Hero = () => {
@@ -17,11 +17,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
       {/* 왼쪽에 사진 (xl 이상에서만 표시) */}
-      <div className="absolute left-60 top-1/2 -translate-y-1/2 hidden xl:block">
+      {/* <div className="absolute left-60 top-1/2 -translate-y-1/2 hidden xl:block">
         <div className="w-[300px] h-[380px] rounded-lg overflow-hidden shadow-lg border-4 border-white/30">
           <img src={profileImg} alt="임재열 프로필" className="w-full h-full object-cover" />
         </div>
-      </div>
+      </div> */}
 
       <div className="relative z-10 px-6 max-w-3xl">
         {/* 인삿말 */}
